@@ -1,0 +1,34 @@
+/* MSG hover anims By Computer Cat & Benzeel*/
+.messageListItem__5126c {
+  > .cozyMessage__5126c { 
+    background: transparent !important;
+    transition: transform 0.3s 0s; /* [duration] | [delay] */
+    z-index: 1; /* fixes popover rendering under chat dividers */
+  }
+  &:has(> .cozyMessage__5126c:hover) { 
+    > .cozyMessage__5126c { 
+      transform: translateX(5px); /*changes how far the message moves when hovered*/
+    }
+    /* popover animation */
+    .buttonContainer_c19a55 {
+      transition: transform 0.15s 0.1s ease; /* [duration] | [delay] */
+      transform: translateX(9px);
+    }
+  }
+  &:has(> .cozyMessage__5126c:hover)::before {
+      display: block;
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: #ffffff0c;
+  }
+}
+
+ div.buttonContainer_c19a55 { 
+  transform: translateX(450px); /*changes how far right the popover starts in the animation */
+}
+
+/* fix emoji menu being offset */
+.layer__59d0d:has(.animatorLeft_faf9c0.fade_faf9c0.didRender_faf9c0) {
+  transform: translateX(-450px) !important; 
+}
