@@ -1,0 +1,16 @@
+.container_a2f514 {
+    background: #00000080;
+    bottom: unset;
+    left: unset;
+    right: 20px;
+    top: 20px !important;
+    height: 110px;
+    width: 250px;
+    border-radius: 8px;
+    border-top: 5px solid;
+    border-top-color: white;
+    transition: border-top-color 1s;
+    &:has(> .slideIn_a2f514) {border-top-color: #df3d40;}
+}
+.spinner_a2f514 {display: none;}
+.problems_a2f514 {padding-bottom: 10px;}
